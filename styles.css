@@ -1,0 +1,48 @@
+
+/* !------------------------------- */
+/* !             MAIN               */
+/* !------------------------------- */
+
+body, button, input, select, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    /* No floating elements allowed on either the left or the right side */
+    clear: both;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+/* !------------------------------- */
+/* !           LAYOUT               */
+/* !------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.masthead {
+    padding: 1em 2em;
+    background-color: aqua;
+    color: rebeccapurple;
+}
+
+.masthead h1 {
+    text-align: center;
+}
+
+.intro {
+    padding: 2em 2em;
+    color: rebeccapurple;
+    background: rgb(230, 251, 251);
+}
+
+
+
+
