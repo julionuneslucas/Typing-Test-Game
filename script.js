@@ -9,6 +9,16 @@ const ORIGIN_TEXT = document.querySelector('#origin-text p').innerHTML;
 const RESET_BUTTON = document.querySelector('#reset');
 const THE_TIMER = document.querySelector('.timer');
 
+var timer = 0;
+
+// !-----------------------------------------------------
+// !              Ativar o tempo no Timer
+// !-----------------------------------------------------
+
+function runTimer() {
+    THE_TIMER.innerHTML = timer;
+    timer++;
+}
 
 
 // !-----------------------------------------------------
@@ -27,8 +37,11 @@ function spellCheck() {
 
 // Detectar quanto conteudo existe dentro da box e se for igual a 0 (primeiro valor) iniciar o timer 
 function start() {
-    let textEnterLength = TEST_AREA.value.length;
-    console.log(textEnterLength);
+    let textEnterdLength = TEST_AREA.value.length;
+    if (textEnterdLenght === 0) {
+        setInterval(runTimer, 10);
+    }
+    console.log(textEnterdLength);
 }
 
 
