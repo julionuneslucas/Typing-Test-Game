@@ -9,7 +9,8 @@ const ORIGIN_TEXT = document.querySelector('#origin-text p').innerHTML;
 const RESET_BUTTON = document.querySelector('#reset');
 const THE_TIMER = document.querySelector('.timer');
 
-var timer = 0;
+// frações de tempo: min, sec,...) 
+var timer = [0, 0, 0, 0];
 
 // !-----------------------------------------------------
 // !              Ativar o tempo no Timer
@@ -17,7 +18,8 @@ var timer = 0;
 
 function runTimer() {
     THE_TIMER.innerHTML = timer;
-    timer++;
+    // ultima fração de tempo
+    timer[3]++;
 }
 
 
@@ -48,6 +50,7 @@ function start() {
 // !-----------------------------------------------------
 // !                  Limpar todo (Reset)
 // !-----------------------------------------------------
+
 
 function reset() {
     console.log('O botão reset foi pressionado!');
